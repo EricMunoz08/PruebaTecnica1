@@ -1,0 +1,14 @@
+from python:3.10.4-alpine3.15
+
+workdir /app
+
+run apk update \
+&& pip install --upgrade pip 
+
+copy ./requirements.txt ./
+
+run pip install -r requirements.txt
+
+copy ./ ./
+
+cmd ["python","manage.py","runserver", "0.0.0.0:8000"]
