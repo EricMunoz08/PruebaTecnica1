@@ -69,7 +69,8 @@ En la misma carpeta se encuentra el archivo 'api.py' donde se consultarán todos
 
 El archivo 'urls.py' en la misma carpeta, importa los routers desde el rest_framework y se exporta un objeto es donde se generarán las urls.
 
- 
+---- Para correr el servidor ejecutar en ventana de comandos: --------
+> python manage.py runserver
 En la carpeta 'Producto' se ingresa a 'urls.py' donde se conectará con la otra aplicación importando desde 'projectos' el archvio 'urls.py' que pertenece al mismo 
 
 > path ('', include('projectos.urls'))
